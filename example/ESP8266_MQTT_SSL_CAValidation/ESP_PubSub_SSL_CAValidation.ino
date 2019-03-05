@@ -124,8 +124,12 @@ void setup()
     _try++;  
   }
   Serial.println("Connected to the WiFi network");  
-
+  //****
+  //Important to set setTrustAnchors to verify certificates
+  //setInsecure() will allow the ssl connection without verification
+  //****
   //client.setInsecure(); //WARNING Do NOT verify server
+  
   client.setTrustAnchors(&cert);
   //NTP is required for CA Cert Validation
   setClock();
