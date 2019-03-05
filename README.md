@@ -9,12 +9,17 @@ This project has different examples using the PubSubClient with WiFiClientSecure
 
 # Contents
 - Examples:
-  - [Certificate Thumbprint](#certificate-thumbprint)
+  - [Certificate Thumbprint Verification](#certificate-thumbprint-verification)
   - [Issuing CA Verification-Requires NTP](#issuing-ca-verification-requires-ntp)
 - [Warnings](#warnings)
 - [Issues and Support](#issues-and-support)
 
-### Certificate Thumbprint
+### Certificate Thumbprint Verification
+This method will verify the SHA1 certificate thumbprint of your MQTT server. While less ideal this method will work with self-signed certificates, however if the certificate is changed you will need to update your code.
+
+To get the certificate thumbprint, open the certificate file (if stored locally) and
+
+![Alt text](pictures/certthumbprint.png?raw=true "Certificate Thumbprint")
 
 ### Issuing CA Verification-Requires NTP
 
