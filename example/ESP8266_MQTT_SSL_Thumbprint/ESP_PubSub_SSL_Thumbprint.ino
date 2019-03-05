@@ -1,3 +1,9 @@
+// Example certificate thumbprint validation to create
+// a secure connection to a MQTT broker!
+//
+// Mar 2019 by Jesse Bedard
+// Released to the public domain
+
 #include <ESP8266WiFi.h>
 #include <PubSubClient.h>
 
@@ -60,9 +66,10 @@ void setup()
   //****
   //Important to set fingerprint to verify server
   //setInsecure() will allow the ssl connection without verification
-  //***
-  //client.setFingerprint(fingerprint);
-  client.setInsecure(); //Do NOT verify server!!!
+  //****
+  //client.setInsecure(); //Do NOT verify server!!!
+  client.setFingerprint(fingerprint);
+  
   
   Serial.println("Connecting to WiFi.");
   int _try = 0;
