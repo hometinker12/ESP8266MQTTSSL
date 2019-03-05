@@ -1,2 +1,4 @@
 # ESP8266MQTTSSL
-Example using the pubsubclient with WiFiClientSecure
+Example using the PubSubClient with WiFiClientSecure
+
+This is a simple example to connect to a MQTT broker with the PubSubClient and WiFiClientSecure.
