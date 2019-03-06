@@ -13,10 +13,10 @@
 const char* ssid = "#######";
 const char* password = "#######";
 const char* mqtt_server = "#######";
-const char* mqtt_clientname = "TESTClient";
-const int mqtt_port = 8883;
 const char* mqtt_username = "#######";
 const char* mqtt_password = "#######";
+const char* mqtt_clientname = "TESTClient";
+const int mqtt_port = 8883;
 char* mqtt_topic = "test/ssltest/state";
 
 //Replace with you issuing certificate authority Base64 format
