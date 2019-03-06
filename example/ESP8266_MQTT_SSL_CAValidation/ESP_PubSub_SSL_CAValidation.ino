@@ -88,7 +88,9 @@ void callback(char* topic, byte* payload, unsigned int length) {
  for (int i=0;i<length;i++) {
     char receivedChar = (char)payload[i];
     Serial.println(receivedChar);
-    //Do some action based on message recieved
+    //****
+    //Do some action based on message received
+    //***
  }
 }
  
