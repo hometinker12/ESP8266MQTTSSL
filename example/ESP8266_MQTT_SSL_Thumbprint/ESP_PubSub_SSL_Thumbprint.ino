@@ -34,7 +34,7 @@ void callback(char* topic, byte* payload, unsigned int length) {
     char receivedChar = (char)payload[i];
     Serial.println(receivedChar);
     //****
-    //Do some action based on message recieved
+    //Do some action based on message received
     //***
  }
 }
